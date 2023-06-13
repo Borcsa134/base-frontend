@@ -2,6 +2,14 @@
 
 Base project for every web application on Borcsa134 repository.
 
+## Usage
+
+- Build the application with `make build` or `nmake build`.
+- Start the app with `make start` or `nmake start`.
+- It is hosted on `localhost:3000`.
+
+All the commands can be found in `Makefile`.
+
 # Next.js
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
