@@ -2,11 +2,25 @@
 
 Base project for every web application on Borcsa134 repository.
 
+## Things to change before using this template
+In `docker-compose.yml`:
+- Change name of service
+- Change name of network
+
+In `package.json`:
+- Change name of package
+
+In `devcontainer.json`:
+- Change name variable
+
 ## Usage
 
+- Create docker network with `docker network create <your-network-in-docker-compose>`.
 - Build the application with `make build` or `nmake build`.
 - Start the app with `make start` or `nmake start`.
 - It is hosted on `localhost:3000`.
+- After creating you can use the `devcontainer` inside VSCode.
+    - Lint on save only available in the container
 
 All the commands can be found in `Makefile`.
 
