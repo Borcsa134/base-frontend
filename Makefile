@@ -1,4 +1,4 @@
-.PHONY: start stop build sh logs test restart config lint 
+.PHONY: start stop restart install build lint sh test logs config promote
 
 # \
 !ifndef 0 # \
@@ -21,9 +21,17 @@ stop:
 # restart containers
 restart: stop start
 
+# install packages
+install: 
+	docker compose run --rm $(container) npm install
+
 # build the app container
 build:
 	docker compose build
+
+# run linter
+lint:
+	docker compose exec $(container) npm run lint
 
 # get a shell within the app container
 sh:
@@ -31,7 +39,7 @@ sh:
 
 # run tests
 test:
-	docker compose exec $(container) /bin/sh -c "npm run test"
+	docker compose exec $(container) npm run test
 
 # check console output
 logs:

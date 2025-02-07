@@ -1,52 +1,39 @@
-# Base web application project - Frontend
+# Next.js 15 Base Project (with TailwindCSS, Jest, ESLint, Prettier)
 
-Base project for every web application on Borcsa134 repository.
+Base project for every web application on Borcsa134 repository. Feel free to use it for your own projects.
 
 ## Prerequisites
-- Docker Desktop
+
+- Docker
 - make, nmake or anything similar
 
-## Things to change before using this template
+## Setup
+
 In `docker-compose.yml`:
+
 - Change name of service
-- Change name of network
+- Change name of image
 
 In `package.json`:
+
 - Change name of package
 
 In `devcontainer.json`:
-- Change name 
-- Change service 
+
+- Change name
+- Change service
 
 ## Usage
 
-- Create docker network with `docker network create <your-network-in-docker-compose>`.
 - Build the application with `make build` or `nmake build`.
+- Install the dependencies with `make install`.
 - Start the app with `make start` or `nmake start`.
 - It is hosted on `localhost:3000`.
 - After creating you can use the `devcontainer` inside VSCode.
-    - Lint on save only available in the container
 
 All the commands can be found in `Makefile`.
 
 # Next.js
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-make start
-```
-
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -61,6 +48,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
